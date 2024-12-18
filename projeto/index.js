@@ -52,7 +52,7 @@ function exibirMenu(deposito) {
             const materiaisEncontrados = deposito.buscarMaterial("titulo", tituloStatus);
         
             if (materiaisEncontrados.length > 0) {
-                const material = materiaisEncontrados[0]; // Assume o primeiro encontrado
+                const material = materiaisEncontrados[0];
                 const novoStatus = prompt("Digite o novo status: ");
                 material.alterarStatus(novoStatus);
             } else {
